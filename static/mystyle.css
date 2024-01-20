@@ -5,10 +5,10 @@ body {
 /*Это стили для меню с функциональностями на главной странице*/
 .table_menu {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    margin-top: 10px;
     /*align-items: left*/
 }
-
 
 /*Стили для шапки*/
 #header_table {
@@ -18,10 +18,21 @@ body {
 
 /*Стили для внутрянки таблицы шапки*/
 #header_row_menu {
-    border: 1px solid #070301; /* задаем сплошную границу размером 1 пиксель цвета #F50 */
+    border: 3px solid #070301; /* задаем сплошную границу размером 1 пиксель цвета #F50 */
     padding: 1px; /* устанавливаем внутренние отступы для всех сторон */
     text-align: center;
     border-radius: 12px;
     background-color: #d78944;
+}
+
+
+/*Стили для таблицы меню*/
+.row_menu {
+    border: 1px solid #070301; /* задаем сплошную границу размером 1 пиксель цвета #F50 */
+    padding: 5px; /* устанавливаем внутренние отступы для всех сторон */
+    text-align: center;
+    border-radius: 12px;
+    background-color: #d78944;
+    height: 30px;
 }
 

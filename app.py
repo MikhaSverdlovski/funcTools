@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 
 class MyApp(Flask):
@@ -19,6 +19,19 @@ def index():
 @app.route('/comparing')
 def comparing():
     return render_template('ComparingDocs.html')
+
+
+@app.route('/compare_files', methods=['POST'])
+def upload_files():
+    if 'file1' not in request.files or 'file2' not in request.files:
+        return 'Не удалось загрузить файлы', 400
+
+    file1 = request.files['file1']
+    file2 = request.files['file2']
+
+    # Здесь вы можете вызвать функции для обработки файлов или что-то еще
+
+    return 'Файлы успешно загружены и обработаны'
 
 
 if __name__ == '__main__':

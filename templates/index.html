@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="table_menu">
-    <a href=" {{ url_for ('comparing') }}">Сравнение документов</a>
-    </div>
+
+    <table id="header_table">
+        <tr>
+            <td class="row_menu"><a href=" {{ url_for ('comparing') }}">Сравнение документов</a></td>
+        </tr>
+        <tr>
+            <td class="row_menu"><a href=" {{ url_for ('comparing') }}">Сравнение документов</a></td>
+        </tr>
+    </table>
+
 {% endblock %}

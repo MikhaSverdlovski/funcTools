@@ -1,4 +1,34 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Функциональность 1</h1>
+    <table id="header_table">
+        <tr>
+            <td class="row_menu" colspan="2">
+                <p>Данный функционал позволяет сравнивать два документа
+            </td>
+        </tr>
+        <form enctype="multipart/form-data" method="post" action="/compare_files" onsubmit="return validateForm()">
+            <tr>
+                <td class="row_menu">
+                    <h3>Файл 1</h3>
+                    <p><input type="file" id="file1">
+                </td>
+                <td class="row_menu">
+                    <h3>Файл 2</h3>
+                    <p><input type="file" id="file2">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="row_menu" colspan="2" >
+                    <b>Результат</b>
+                    <input type="submit" value="Отправить"></p>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+     <!-- Ссылка на внешний скрипт -->
+    <script src="{{ url_for('static', filename='js/Comparing_validateFiles.js') }}"></script>
 {% endblock %}
+
+
