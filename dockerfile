@@ -13,5 +13,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Копируем остальные файлы в контейнер
 COPY . .
 
+# Копирование файлов в контейнер
+COPY templates /app/templates
+COPY static /app/static
+
 # Запускаем приложение
 CMD ["python", "app.py"]
