@@ -2,14 +2,26 @@ body {
     background-color: grey;
 }
 
-h1 {
-    color: black;
-    text-align: center;
-}
-
+/*Это стили для меню с функциональностями на главной странице*/
 .table_menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    /*align-items: left*/
+}
+
+
+/*Стили для шапки*/
+#header_table {
+    width: 95%;
+    margin: auto;
+}
+
+/*Стили для внутрянки таблицы шапки*/
+#header_row_menu {
+    border: 1px solid #070301; /* задаем сплошную границу размером 1 пиксель цвета #F50 */
+    padding: 1px; /* устанавливаем внутренние отступы для всех сторон */
+    text-align: center;
+    border-radius: 12px;
+    background-color: #d78944;
 }
 
